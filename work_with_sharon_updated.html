@@ -1,64 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work With Sharon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background: #fcf6f0;
       margin: 0;
       color: #2e2e2e;
+      scroll-behavior: smooth;
     }
+
     header {
       background: linear-gradient(135deg, #f46b45, #eea849);
       color: white;
       padding: 3rem 2rem;
       text-align: center;
     }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+
     header p {
       font-size: 1.2rem;
       font-style: italic;
     }
+
     section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       color: #f46b45;
       border-bottom: 2px solid #ffe3c9;
       padding-bottom: 0.3rem;
     }
+
     .services, .portfolio {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
       margin-top: 1rem;
     }
+
     .services div, .portfolio div {
-      background: #ffffff;
+      background: #fff;
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
+
     .services div:hover, .portfolio div:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
+
     a {
       color: #f46b45;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       background: #f46b45;
       color: white;
@@ -66,79 +81,114 @@
       padding: 1.2rem;
       font-size: 0.9rem;
     }
+
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #eea849;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      font-weight: 600;
+      z-index: 100;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .floating-cta:hover {
+      background: #f46b45;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.9rem;
+      background: #f46b45;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #eea849;
+    }
   </style>
 </head>
 <body>
-  <header>
+  <div class="floating-cta" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+    Work With Me
+  </div>
+
+  <header data-aos="fade-down">
     <h1>Work With Sharon</h1>
     <p>For Creatives, Professionals & Dreamers Who Want More</p>
   </header>
 
-  <section>
-    <h2>Meet Sharon</h2>
-    <p>Hi! I’m Sharon Mutanu—creative soul, admin boss, and storytelling strategist. I help people and businesses shine online with structure, clarity, and a little spark. Whether you’re launching a brand, managing chaos, or just trying to look professional on a budget—I got you.</p>
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-user"></i> Meet Sharon</h2>
+    <p>Hi! I’m Sharon Mutanu—creative soul, admin boss, and storytelling strategist. I help people and businesses shine online with structure, clarity, and a little spark.</p>
   </section>
 
-  <section>
-    <h2>My Services</h2>
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-tools"></i> My Services</h2>
     <div class="services">
-      <div>
-        <strong>Virtual Assistant Support</strong>
-        <p>Let me help with inbox cleanup, scheduling, reminders, and making your day smoother.</p>
-      </div>
-      <div>
-        <strong>Resume & LinkedIn Glow Ups</strong>
-        <p>I transform dull resumes and profiles into confidence boosters that open doors.</p>
-      </div>
-      <div>
-        <strong>Social Media Content</strong>
-        <p>Need captions that connect? Graphics that pop? Let's get your content speaking your vibe.</p>
-      </div>
-      <div>
-        <strong>Website Design & Setup</strong>
-        <p>Clean, mobile-friendly, and fabulous websites for service providers, freelancers & small biz.</p>
-      </div>
-      <div>
-        <strong>Creative Strategy & Branding</strong>
-        <p>Whether you're figuring out your voice or visuals—I help you align it all beautifully.</p>
-      </div>
-      <div>
-        <strong>Writing Services</strong>
-        <p>CVs, cover letters, LinkedIn bios, blog posts, web copy—crafted with heart and clarity.</p>
-      </div>
+      <div><strong>Virtual Assistant Support</strong><p>Inbox cleanup, scheduling, reminders, and more.</p></div>
+      <div><strong>Resume & LinkedIn Glow Ups</strong><p>Dull resumes? Not on my watch. I boost confidence.</p></div>
+      <div><strong>Social Media Content</strong><p>Captions, graphics & magic for your brand's vibe.</p></div>
+      <div><strong>Website Design & Setup</strong><p>Clean, mobile-friendly, stunning sites for pros & creatives.</p></div>
+      <div><strong>Creative Strategy & Branding</strong><p>Find your voice, clarify your visuals, align everything.</p></div>
+      <div><strong>Writing Services</strong><p>CVs, cover letters, blogs, bios—words with soul.</p></div>
     </div>
   </section>
 
-  <section>
-    <h2>Portfolio Highlights</h2>
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-folder-open"></i> Portfolio Highlights</h2>
     <div class="portfolio">
+      <div><strong>Live Site:</strong><br><a href="https://shaas.github.io" target="_blank">My Personal Website</a></div>
+      <div><strong>Design Samples:</strong><br>Social posters, CVs, brand kits (available upon request).</div>
       <div>
-        <p><strong>Live Site:</strong> <a href="https://shaas.github.io" target="_blank">My Personal Website</a></p>
-      </div>
-      <div>
-        <p><strong>Design Samples:</strong> Social media posters, CV templates, mini brand kits (available upon request).</p>
-      </div>
-      <div>
-        <p><strong>Writing Sample:</strong></p>
-        <em>“Writing My Way Through the Chaos”</em><br>
-        There’s something powerful about words. They create clarity where there’s noise. They open doors. They speak when we can’t.<br><br>
-        My name is Sharon Mutanu, and writing has always been my quiet superpower. I write to express, to organize, to connect. Whether it’s crafting a solid CV, designing the perfect caption, or helping someone put their journey into words—I bring strategy, structure, and soul to every piece I create.<br><br>
-        Right now, I’m building a writing practice that helps professionals and creatives show up with confidence. My dream is to tell stories that move people—and get paid for it too.<br><br>
-        Let’s build something bold together.
+        <strong>Writing Sample:</strong><br><em>“Writing My Way Through the Chaos”</em><br>
+        Writing has always been my quiet superpower...<br>Let’s build something bold together.
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Let’s Chat</h2>
-    <p>Ready to level up your digital presence or just need someone to bring structure to the madness? Drop me a message and let’s work some magic together.</p>
-    <p>Email: <a href="mailto:mutanusharon0@gmail.com">mutanusharon0@gmail.com</a><br />
-       WhatsApp: <a href="https://wa.me/254115013612" target="_blank">+254 115 013 612</a><br />
-       LinkedIn: <a href="https://www.linkedin.com/in/sharonmutanu" target="_blank">sharonmutanu</a></p>
+  <section id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope"></i> Let’s Chat</h2>
+    <p>Want to level up your digital game? Reach out:</p>
+    <form action="mailto:mutanusharon0@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>WhatsApp: <a href="https://wa.me/254115013612" target="_blank">+254 115 013 612</a> | LinkedIn: <a href="https://www.linkedin.com/in/sharonmutanu" target="_blank">@sharonmutanu</a></p>
   </section>
 
   <footer>
     <p>© 2025 Sharon Mutanu | Creative work, soulful strategy, and results that feel good</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-</html>
+        </html>
