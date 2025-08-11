@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+---
+
+<section style="max-width:900px; margin:auto; padding:2rem;">
+  <h1 style="color:#00AEEF; text-align:center; margin-bottom:2rem;">Moonpie’s Blog</h1>
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:1.5rem;
+  ">
+    {% for post in site.posts %}
+      <article style="
+        background:#1a1a1a;
+        padding:1.5rem;
+        border-radius:12px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.5);
+        transition:transform 0.2s ease, box-shadow 0.2s ease;
+      " onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 15px rgba(0,174,239,0.5)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.5)'">
+        <h3><a href="{{ post.url }}" style="color:#00AEEF; text-decoration:none;">{{ post.title }}</a></h3>
+        <p style="font-size:0.85rem; color:#888;">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p style="color:#ccc;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <a href="{{ post.url }}" style="font-weight:bold; color:#00AEEF; text-decoration:none;">Read More →</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
