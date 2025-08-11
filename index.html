@@ -1,257 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work With Sharon</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fcf6f0;
-      margin: 0;
-      color: #2e2e2e;
-      scroll-behavior: smooth;
-    }
+---
+layout: default
+title: Home
+---
 
-    header {
-      background: linear-gradient(135deg, #f46b45, #eea849);
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
+<section style="max-width:900px; margin:auto; padding:2rem;">
+  <h1 style="color:#00AEEF; text-align:center; margin-bottom:1rem;">Moonpie’s Portfolio</h1>
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-style: italic;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #f46b45;
-      border-bottom: 2px solid #ffe3c9;
-      padding-bottom: 0.3rem;
-    }
-
-    .services, .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .services div, .portfolio div {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .services div:hover, .portfolio div:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-
-    a {
-      color: #f46b45;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background: #f46b45;
-      color: white;
-      text-align: center;
-      padding: 1.2rem;
-      font-size: 0.9rem;
-    }
-
-    .floating-cta {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #eea849;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 30px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      font-weight: 600;
-      z-index: 100;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .floating-cta:hover {
-      background: #f46b45;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    input, textarea {
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-
-    button {
-      padding: 0.9rem;
-      background: #f46b45;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #eea849;
-    }
-
-    .bio img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-
-    .social-links {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .social-links a {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      background: #f46b45;
-      color: #fff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 40px;
-      font-size: 1.5rem;
-      transition: background 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background: #eea849;
-    }
-
-    .social-links a i {
-      font-size: 1.5rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="floating-cta" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
-    Work With Me
-  </div>
-
-  <header data-aos="fade-down">
-    <h1>Work With Sharon</h1>
-    <p>For Creatives, Professionals & Dreamers Who Want More</p>
-  </header>
-
-  <section data-aos="fade-up">
-    <h2><i class="fas fa-user"></i> Meet Sharon</h2>
-    <div class="bio">
-     <!-- Make sure this path is correct -->
-      <p>Hi! I’m Sharon Mutanu—creative soul, admin boss, and storytelling strategist. I help people and businesses shine online with structure, clarity, and a little spark.</p>
-    </div>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/sharonmutanu" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/sha.ta.nu" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/254115013612" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/share/1Bnkym4pd6" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
+  <section style="margin-bottom:3rem; text-align:center;">
+    <h2 style="color:#fff;">Hi, I’m Sharon Mutanu</h2>
+    <p style="color:#bbb; max-width:600px; margin:auto;">
+      Creative soul, admin boss, and storytelling strategist. I help people and businesses shine online with structure, clarity, and a little spark.
+    </p>
   </section>
 
-  <section data-aos="fade-up">
-    <h2><i class="fas fa-tools"></i> My Services</h2>
-    <div class="services">
-      <div><strong>Virtual Assistant Support</strong><p>Inbox cleanup, scheduling, reminders, and more.</p></div>
-      <div><strong>Resume & LinkedIn Glow Ups</strong><p>Dull resumes? Not on my watch. I boost confidence.</p></div>
-      <div><strong>Social Media Content</strong><p>Captions, graphics & magic for your brand's vibe.</p></div>
-      <div><strong>Website Design & Setup</strong><p>Clean, mobile-friendly, stunning sites for pros & creatives.</p></div>
-      <div><strong>Creative Strategy & Branding</strong><p>Find your voice, clarify your visuals, align everything.</p></div>
-      <div><strong>Writing Services</strong><p>CVs, cover letters, blogs, bios—words with soul.</p></div>
-    </div>
+  <section style="margin-bottom:3rem;">
+    <h2 style="color:#00AEEF; border-bottom: 2px solid #00AEEF; padding-bottom:0.3rem;">My Services</h2>
+    <ul style="color:#ccc; list-style:none; padding:0; max-width:600px; margin:auto;">
+      <li>• Virtual Assistant Support (inbox cleanup, scheduling, reminders)</li>
+      <li>• Resume & LinkedIn Glow Ups (boost your confidence)</li>
+      <li>• Social Media Content (captions, graphics & brand magic)</li>
+      <li>• Website Design & Setup (clean, mobile-friendly, stunning)</li>
+      <li>• Creative Strategy & Branding (find your voice and visuals)</li>
+      <li>• Writing Services (CVs, cover letters, blogs, bios with soul)</li>
+    </ul>
   </section>
 
-  <section data-aos="fade-up">
-    <h2><i class="fas fa-folder-open"></i> Portfolio Highlights</h2>
-    <div class="portfolio">
-      <div><strong>Live Site:</strong><br><a href="https://shaas.github.io" target="_blank">My Personal Website</a></div>
-      <div><strong>Design Samples:</strong><br>Social posters, CVs, brand kits (available upon request).</div>
-      <div>
-        <strong>Writing Sample:</strong><br><em>“Writing My Way Through the Chaos”</em><br>
-        Writing has always been my quiet superpower...<br>Let’s build something bold together.
-      </div>
-    </div>
+  <section style="margin-bottom:3rem;">
+    <h2 style="color:#00AEEF; border-bottom: 2px solid #00AEEF; padding-bottom:0.3rem;">Portfolio Highlights</h2>
+    <ul style="color:#ccc; max-width:600px; margin:auto;">
+      <li>• <a href="https://shaas.github.io" style="color:#00AEEF; text-decoration:none;">Personal Website</a></li>
+      <li>• Design Samples: Social posters, CVs, brand kits (available upon request)</li>
+      <li>• Writing Sample: “Writing My Way Through the Chaos” – a story of passion and hustle</li>
+    </ul>
   </section>
 
-  <!-- Added Blog Section -->
-    <section class="blog-posts">
-      <h2>Recent Posts</h2>
-      <ul>
-        <!-- Link to the first blog post -->
-        <li>
-          <a href="whyeverybusinessneedsawebsite.html">
-            Why Every Business Needs a Website
-          </a>
-        </li>
-        
-        <!-- Link to the second blog post -->
-        <li>
-          <a href="typesofclients.html">
-            The 5 Types of Clients I’ve Met (And Which One Are You?)
-          </a>
-        </li>
-      </ul>
-    </section>
-
-  <section id="contact" data-aos="fade-up">
-    <h2><i class="fas fa-envelope"></i> Let’s Chat</h2>
-    <p>Want to level up your digital game? Reach out:</p>
-    <form action="mailto:mutanusharon0@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section style="text-align:center;">
+    <a href="/blog" style="
+      display:inline-block;
+      margin-top:1.5rem;
+      background:#00AEEF;
+      color:#000;
+      padding:0.7rem 1.2rem;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    ">Explore My Blog →</a>
   </section>
-
-  <footer>
-    <p>&copy; 2021 Sharon Mutanu. Let's create.</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-                                                                                                                     </html>
+</section>
